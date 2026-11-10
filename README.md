@@ -164,7 +164,6 @@ Double-diamond, from discovery to reflection:
 glucose-watch-report/
 ├── README.md
 ├── report/
-│   ├── 00_certificate.md
 │   ├── 00_abstract.md
 │   ├── 01_problem_definition_and_scope.md
 │   ├── 02_user_research.md
@@ -183,14 +182,6 @@ glucose-watch-report/
 └── assets/            sketches, wireframes, screenshots
 ```
 
-## Prototype and screenshots
-
-- **Interactive Figma prototype:** [add Figma view-only link here]
-- **Screenshots:** add images to `assets/` and link them here, for example:
-
-```
-![Glance screen, Day and Night](assets/glance.png)
-```
 
 ## Limitations and future work
 
@@ -215,8 +206,8 @@ Selected sources (full IEEE list in [`report/11_references.md`](report/11_refere
 
 ## Author
 
-**[Your name]**, [USN], Dept. of Computer Science & Engineering, East Point College of Engineering & Technology
-Course: Advanced UI/UX, V Semester B.E. | Guide: Prasanth, Assistant Professor, Dept. of CSE
+**[D Lokesh]**, [1EP24CS033], Dept. of Computer Science & Engineering, East Point College of Engineering & Technology
+Course: Advanced UI/UX, V Semester B.E. | Guide: Mr Prasanth, Assistant Professor, Dept. of CSE
 
 ---
 

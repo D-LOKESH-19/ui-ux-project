@@ -51,7 +51,7 @@ The problem was identified through a literature review (no user interviews were 
 | **Trust** | Mismatches with fingerstick readings and alarm fatigue are major limitations of CGM use. |
 | **Existing products** | Dexcom G7 already offers an "Urgent Low Soon" alert 20 minutes ahead and quiet modes, but app reviewers report alerts that return after dismissal on the watch, limited watch-face support and no dark mode. |
 
-Full details and sources are in [`report/02_user_research.md`](report/02_user_research.md).
+Full details and sources are in [`report/02_user_research.md`](doc/02_user_research.md).
 
 ## Who it is for
 
@@ -122,7 +122,7 @@ Two soft themes (no pure black or white, no neon) for comfort at all hours.
 
 **Layout:** 454 x 454 px round screen, 28 px safe margin, buttons 64 to 72 px tall, one action per screen, maximum two lines of text.
 
-Full specification: [`report/07_visual_design_and_design_system.md`](report/07_visual_design_and_design_system.md).
+Full specification: [`report/07_visual_design_and_design_system.md`](doc/07_visual_design_and_design_system.md).
 
 ## Screens and flows
 
@@ -195,7 +195,7 @@ glucose-watch-report/
 
 ## References
 
-Selected sources (full IEEE list in [`report/11_references.md`](report/11_references.md)):
+Selected sources (full IEEE list in [`report/11_references.md`](doc/11_references.md)):
 
 1. "The emotional burden and behavioral impacts of alarms and alerts across the spectrum of diabetes technology use," *JMIR Diabetes*, 2026. https://diabetes.jmir.org/2026/1/e97122
 2. "Alarm fatigue and sleep deprivation," *Diabetes Care for Children & Young People*. https://diabetesonthenet.com/diabetes-care-children-young-people/alarm-fatigue-and-sleep-deprivation/

@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Glucose Watch - Senior Production Screens</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dayBg: '#F4F1EA',
+            dayCard: '#FFFFFF',
+            dayText: '#101813',
+            dayMuted: '#4A554D',
+            dayGreen: '#006038',
+            dayGreenBg: '#D1F0DE',
+            dayAmber: '#8A5000',
+            dayAmberBg: '#FFE8C2',
+            dayRed: '#A61717',
+            dayRedBg: '#FCE0E0',
+            nightBg: '#0B0F14',
+            nightCard: '#18212A',
+            nightText: '#F7F9FC',
+            nightMuted: '#A0ADC0',
+            nightGreen: '#7FD1A8',
+            nightGreenBg: '#123824',
+            nightAmber: '#F7BC59',
+            nightAmberBg: '#3F2C0B',
+            nightRed: '#FF6B6B',
+            nightRedBg: '#471414',
+          },
+          fontFamily: {
+            hyperlegible: ['"Atkinson Hyperlegible"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #0d0f12;
+      color: #F7F9FC;
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+      font-feature-settings: "tnum" 1;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tnum {
+      font-variant-numeric: tabular-nums;
+    }
+    .watch-device {
+      width: 454px;
+      height: 454px;
+      border-radius: 9999px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 12px #1A1F26, 0 0 0 14px #29303A, 0 25px 60px rgba(0,0,0,0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    /* 28px circular safe margin: inner usable diameter 398px */
+    .watch-inner {
+      width: 398px;
+      height: 398px;
+      border-radius: 9999px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+    }
+    .safe-guide {
+      position: absolute;
+      width: 398px;
+      height: 398px;
+      border-radius: 9999px;
+      pointer-events: none;
+      border: 1px dashed rgba(120, 140, 130, 0.25);
+    }
+    /* Strictly Senior Typography System */
+    .txt-title {
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .txt-body {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .txt-sub {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+  </style>
+<meta content="web_standard" name="shell-type"/>
+</head>
+<body class="p-6 md:p-12 min-h-screen flex flex-col items-center">
+<!-- Production Spec Top Bar -->
+<header class="w-full max-w-[1900px] mb-12">
+<div class="flex items-center gap-3 text-sm tracking-wider uppercase font-bold text-nightGreen mb-3">
+<span class="inline-block w-3 h-3 rounded-full bg-nightGreen shadow-[0_0_10px_#7FD1A8]"></span>
+      Figma Page: "Screens" • 454 × 454 AMOLED Circular Display (Senior Spec)
+    </div>
+<div class="flex flex-wrap items-baseline justify-between gap-6 border-b border-white/10 pb-6">
+<div>
+<h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white flex items-center gap-3">
+          Glucose Watch <span class="text-white/40 font-light text-2xl md:text-3xl">/ Production Screens</span>
+</h1>
+<p class="text-white/70 text-lg mt-3 max-w-4xl leading-relaxed">
+          High-readability senior directives: strictly <strong>24px minimum font floor</strong>, <strong>96px hero glucose numbers</strong>, <strong>56px trend indicators</strong>, <strong>72px touch targets</strong>, and <strong>28px peripheral safe padding</strong> with high contrast (&gt;7:1).
+        </p>
+</div>
+<div class="flex flex-wrap gap-3 items-center">
+<span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-white font-mono text-sm">Safe Margin: 28px</span>
+<span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-white font-mono text-sm">Touch Target: ≥72px</span>
+<span class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-white font-mono text-sm">Font Floor: 24px</span>
+</div>
+</div>
+</header>
+<!-- Main Container: Side-by-Side Mode Comparisons or Sections -->
+<main class="w-full max-w-[1900px] flex flex-col gap-20"><div class="flex flex-col w-full">
+<!-- Interactive Navigation & Preset Switcher Bar -->
+<section class="w-full flex flex-col gap-6 mb-12">
+<div class="flex flex-wrap items-center justify-between gap-4 p-6 rounded-3xl bg-surface-container shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-caption text-caption text-secondary tracking-wider uppercase font-semibold">Senior Readability Verification Stage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Interactive 454×454 Round AMOLED Frame Switcher</h2>
+</div>
+<!-- Action Pill Group -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Day/Night Toggle -->
+<button class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-highest text-on-surface font-body-lg text-body-lg shadow-sm hover:bg-surface-dim transition-all duration-200" id="mode-toggle-btn">
+<span class="material-symbols-outlined text-primary" id="mode-icon">light_mode</span>
+<span id="mode-label">Day Parchment</span>
+</button>
+<!-- Safe Guide Toggle -->
+<button class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-highest text-on-surface font-body-lg text-body-lg shadow-sm hover:bg-surface-dim transition-all duration-200" id="guide-toggle-btn">
+<span class="material-symbols-outlined text-secondary" id="guide-icon">grid_guides</span>
+<span>Safe Margins (28px)</span>
+</button>
+<!-- Auto Play Toggle -->
+<button class="flex items-center gap-3 px-5 py-3 rounded-full bg-primary text-on-primary font-body-lg text-body-lg shadow-sm hover:opacity-90 transition-all duration-200" id="autoplay-btn">
+<span class="material-symbols-outlined" id="autoplay-icon">play_arrow</span>
+<span id="autoplay-label">Auto Cycle</span>
+</button>
+</div>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2" id="category-tabs">
+<button class="cat-pill px-6 py-2.5 rounded-full bg-primary text-on-primary font-body-lg text-body-lg whitespace-nowrap shadow-sm" data-cat="all">All Screens (17)</button>
+<button class="cat-pill px-6 py-2.5 rounded-full bg-surface-container text-on-surface font-body-lg text-body-lg whitespace-nowrap hover:bg-surface-container-high transition-all" data-cat="core">Core Daily (4)</button>
+<button class="cat-pill px-6 py-2.5 rounded-full bg-surface-container text-on-surface font-body-lg text-body-lg whitespace-nowrap hover:bg-surface-container-high transition-all" data-cat="alert">Alert Flow (4)</button>
+<button class="cat-pill px-6 py-2.5 rounded-full bg-surface-container text-on-surface font-body-lg text-body-lg whitespace-nowrap hover:bg-surface-container-high transition-all" data-cat="mode">Modes &amp; Sleep (4)</button>
+<button class="cat-pill px-6 py-2.5 rounded-full bg-surface-container text-on-surface font-body-lg text-body-lg whitespace-nowrap hover:bg-surface-container-high transition-all" data-cat="edge">Safety &amp; Hardware (5)</button>
+</div>
+</section>
+<!-- Central Stage: 1:1 Hardware Smartwatch & Realtime Spec Sheet -->
+<section class="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 items-center justify-items-center mb-16">
+<!-- Left Column: The Watch Stage (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-center justify-center relative w-full">
+<!-- Hardware Housing Assembly (454x454 OLED with physical bezel + titanium hardware crown) -->
+<div class="relative flex items-center justify-center p-8">
+<!-- Hardware Digital Crown Button (Right Edge) -->
+<div class="absolute -right-3 top-1/2 -translate-y-1/2 w-7 h-24 rounded-r-lg bg-gradient-to-r from-surface-dim to-secondary-fixed shadow-md flex flex-col justify-around py-3 items-center z-30">
+<div class="w-4 h-1 rounded-full bg-outline/40"></div>
+<div class="w-4 h-1 rounded-full bg-outline/40"></div>
+<div class="w-4 h-1 rounded-full bg-outline/40"></div>
+<div class="w-4 h-1 rounded-full bg-outline/40"></div>
+</div>
+<!-- Hardware Secondary Action Button (Lower Right) -->
+<div class="absolute -right-1 top-2/3 w-4 h-14 rounded-r-md bg-secondary-fixed shadow-sm z-30"></div>
+<!-- Physical Titanium Outer Ring & Ceramic Bezel -->
+<div class="watch-device p-0 relative shadow-2xl transition-all duration-300" id="watch-casing">
+<!-- Tactile Glass Reflection Sheen (Micro Glare layer) -->
+<div class="absolute inset-0 rounded-full pointer-events-none z-40 bg-gradient-to-tr from-white/10 via-transparent to-white/5"></div>
+<!-- 28px Circular Safe Guide Overlay -->
+<div class="safe-guide z-50 hidden transition-opacity" id="safe-guide-ring">
+<div class="absolute top-2 left-1/2 -translate-x-1/2 font-caption text-caption text-secondary/70 bg-surface/80 px-2 rounded-full">Safe 398px Zone</div>
+</div>
+<!-- Watch AMOLED Display Face: Exact 454x454 Circular Canvas -->
+<div class="w-[454px] h-[454px] rounded-full overflow-hidden flex flex-col items-center justify-between p-[28px] relative select-none transition-colors duration-300 bg-[#F4F1EA] text-[#101813]" id="watch-canvas">
+<!-- Dynamic Screen Container -->
+<div class="watch-inner w-full h-full relative flex flex-col items-center justify-between" id="screen-container">
+<!-- Dynamically populated via JS -->
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Under-Watch Navigation Controls -->
+<div class="flex items-center gap-6 mt-6">
+<button class="w-16 h-16 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high flex items-center justify-center shadow-md active:scale-95 transition-transform" id="prev-btn" title="Previous screen (Left Arrow)">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-lg text-body-lg text-on-surface font-semibold" id="screen-title-label">1. Glance Home</span>
+<span class="font-caption text-caption text-secondary" id="screen-index-label">Screen 1 of 17 • Core Daily</span>
+</div>
+<button class="w-16 h-16 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high flex items-center justify-center shadow-md active:scale-95 transition-transform" id="next-btn" title="Next screen (Right Arrow or Space)">
+<span class="material-symbols-outlined text-3xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Senior Ergonomic Verification HUD (5 cols) -->
+<div class="lg:col-span-5 w-full flex flex-col gap-6">
+<div class="p-8 rounded-3xl bg-surface-container shadow-md flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary uppercase font-bold tracking-wider">Ergonomic Audit (Active Frame)</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption font-bold" id="badge-compliance">100% Verified</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface" id="hud-title">Glance Home</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant" id="hud-description">
+          Primary 96px high-contrast tabular numerals positioned directly in the optical focal core. Rapid parsing in under 300ms.
+        </p>
+<!-- Metric Spec Grid -->
+<div class="grid grid-cols-2 gap-4 mt-2">
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-caption text-caption text-secondary">Hero Typography</span>
+<span class="font-headline-lg text-headline-lg text-primary" id="hud-hero-size">96px Bold</span>
+<span class="font-caption text-caption text-on-surface-variant">Atkinson Tabular</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-caption text-caption text-secondary">Typography Floor</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">24px Min</span>
+<span class="font-caption text-caption text-on-surface-variant">Zero fine print</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-caption text-caption text-secondary">Touch Target</span>
+<span class="font-headline-lg text-headline-lg text-primary" id="hud-target-size">≥ 72px</span>
+<span class="font-caption text-caption text-on-surface-variant">Tremor-safe arc</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-caption text-caption text-secondary">Contrast Ratio</span>
+<span class="font-headline-lg text-headline-lg text-primary" id="hud-contrast">&gt; 11:1</span>
+<span class="font-caption text-caption text-on-surface-variant">AAA Senior Standard</span>
+</div>
+</div>
+<!-- Sensory Reinforcement Channels -->
+<div class="flex flex-col gap-3 pt-4 border-t border-outline-variant/30">
+<span class="font-caption text-caption text-secondary uppercase font-bold tracking-wider">Multi-Modal Signaling Vector</span>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl" id="hud-channel-icon">sensors</span>
+<span class="font-body-lg text-body-lg text-on-surface" id="hud-channel-text">Visual + Directional Chevron + Soft Haptic Confirmation</span>
+</div>
+</div>
+</div>
+<!-- Quick Dial Tips -->
+<div class="p-6 rounded-3xl bg-secondary-container text-on-secondary-container flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl flex-shrink-0">keyboard</span>
+<div class="font-caption text-caption">
+<strong>Interactive Controls:</strong> Use <strong>Left / Right Arrow</strong> or <strong>Spacebar</strong> to cycle screens. Tap the <strong>Day/Night</strong> button to evaluate contrast in dark and light rooms.
+        </div>
+</div>
+</div>
+</section>
+<!-- Bottom Strip: 17 Screen Thumbnail Rack -->
+<section class="w-full flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Screen Directory (17 Production Frames)</h3>
+<span class="font-caption text-caption text-secondary">Click any miniature to preview</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9 gap-4" id="thumb-grid">
+<!-- 17 Thumbnails rendered dynamically -->
+</div>
+</section>
+</div>
+<!-- Inline Application Logic -->
+<script>
+  (function() {
+    // 17 Production Screen Data Definitions
+    const screens = [
+      {
+        id: 1,
+        title: "Glance Home",
+        category: "core",
+        heroSize: "96px Tabular",
+        targetSize: "Passive / Glance",
+        contrast: "14:1 (AAA)",
+        description: "Primary daytime hero display with steady 56px arrow token, 24px units, and freshness timestamp.",
+        vector: "Visual ● Glyph + Single Soft Pulse",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-3xl ${isNight ? 'text-nightGreen' : 'text-dayGreen'}">schedule</span>
+              <span class="font-body-lg text-body-lg font-bold">5 min ago</span>
+            </div>
+            
+            <div class="flex flex-col items-center -my-2">
+              <div class="flex items-center justify-center gap-3">
+                <span class="text-[96px] font-bold leading-none tracking-tight font-glucose-display tnum">118</span>
+                <span class="material-symbols-outlined text-5xl font-bold ${isNight ? 'text-nightGreen' : 'text-dayGreen'}">east</span>
+              </div>
+              <span class="font-caption text-caption tracking-wider uppercase font-semibold mt-1">mg / dL</span>
+            </div>
+
+            <div class="w-full px-6">
+              <div class="w-full py-3 rounded-full flex items-center justify-center gap-2 ${isNight ? 'bg-nightCard text-nightGreen' : 'bg-dayCard text-dayGreen'} shadow-sm">
+                <span class="material-symbols-outlined text-2xl font-bold">check_circle</span>
+                <span class="font-body-lg text-body-lg font-bold tracking-wide uppercase">In Range Steady</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 2,
+        title: "3-Hour Trend Graph",
+        category: "core",
+        heroSize: "64px Vector",
+        targetSize: "Dial Scrollable",
+        contrast: "12:1 (AAA)",
+        description: "Smooth 3-hour continuous curve locked between strict 70 and 180 safe limit guides with zero clutter.",
+        vector: "Tactile Trajectory Curve + Boundaries",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-1 pb-1">
+            <div class="flex items-center justify-between w-full px-8">
+              <span class="font-body-lg text-body-lg font-bold">3-Hour Trend</span>
+              <span class="font-body-lg text-body-lg font-bold ${isNight ? 'text-nightGreen' : 'text-dayGreen'}">118 →</span>
+            </div>
+
+            <!-- Vector SVG Graph -->
+            <div class="w-full px-4 h-48 flex items-center justify-center relative">
+              <svg class="w-full h-full overflow-visible" viewBox="0 0 320 160">
+                <!-- Safe Target Zone fill -->
+                <rect x="0" y="35" width="320" height="90" fill="${isNight ? 'rgba(127,209,168,0.1)' : 'rgba(0,96,56,0.08)'}" rx="8"/>
+                <!-- Upper Safe Bound 180 -->
+                <line x1="0" y1="35" x2="320" y2="35" stroke="${isNight ? '#A0ADC0' : '#4A554D'}" stroke-dasharray="4 4" stroke-width="1.5"/>
+                <text x="6" y="30" fill="${isNight ? '#A0ADC0' : '#4A554D'}" font-size="16" font-family="'Atkinson Hyperlegible'">180 mg/dL</text>
+                
+                <!-- Lower Safe Bound 70 -->
+                <line x1="0" y1="125" x2="320" y2="125" stroke="${isNight ? '#A0ADC0' : '#4A554D'}" stroke-dasharray="4 4" stroke-width="1.5"/>
+                <text x="6" y="145" fill="${isNight ? '#A0ADC0' : '#4A554D'}" font-size="16" font-family="'Atkinson Hyperlegible'">70 mg/dL</text>
+
+                <!-- Trend Line -->
+                <path d="M 10 95 C 60 110, 110 70, 170 85 C 220 100, 270 78, 305 76" fill="none" stroke="${isNight ? '#7FD1A8' : '#006038'}" stroke-width="6" stroke-linecap="round"/>
+                <!-- Current Dot -->
+                <circle cx="305" cy="76" r="8" fill="${isNight ? '#7FD1A8' : '#006038'}"/>
+                <circle cx="305" cy="76" r="14" fill="${isNight ? '#7FD1A8' : '#006038'}" opacity="0.3"/>
+              </svg>
+            </div>
+
+            <div class="flex items-center gap-8 font-caption text-caption opacity-80">
+              <span>-3 hrs</span>
+              <span>-1.5 hrs</span>
+              <span>Now</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 3,
+        title: "Alerts History",
+        category: "core",
+        heroSize: "32px Semibold",
+        targetSize: "74px Row Height",
+        contrast: "11:1 (AAA)",
+        description: "Vertical dial carousel with massive 74px rows. Max 3 words per line for cognitive ease.",
+        vector: "Haptic Tick per Item Scroll",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <span class="font-body-lg text-body-lg font-bold">Past Alerts</span>
+
+            <div class="w-full flex flex-col gap-2.5 px-4">
+              <!-- Item 1 -->
+              <div class="w-full h-[74px] rounded-2xl flex items-center justify-between px-5 ${isNight ? 'bg-nightCard' : 'bg-dayCard'} shadow-sm">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-3xl ${isNight ? 'text-nightRed' : 'text-dayRed'}">arrow_downward</span>
+                  <div class="text-left">
+                    <div class="font-body-lg text-body-lg font-bold">Low 64</div>
+                    <div class="font-caption text-caption opacity-70">10:15 AM</div>
+                  </div>
+                </div>
+                <span class="font-caption text-caption font-semibold">Treated</span>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="w-full h-[74px] rounded-2xl flex items-center justify-between px-5 ${isNight ? 'bg-nightCard' : 'bg-dayCard'} shadow-sm">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-3xl ${isNight ? 'text-nightAmber' : 'text-dayAmber'}">arrow_upward</span>
+                  <div class="text-left">
+                    <div class="font-body-lg text-body-lg font-bold">High 210</div>
+                    <div class="font-caption text-caption opacity-70">Yesterday</div>
+                  </div>
+                </div>
+                <span class="font-caption text-caption font-semibold">OK</span>
+              </div>
+            </div>
+
+            <span class="font-caption text-caption opacity-70">Scroll for more</span>
+          </div>
+        `
+      },
+      {
+        id: 4,
+        title: "Quick Settings",
+        category: "core",
+        heroSize: "32px Title",
+        targetSize: "72px Pill Controls",
+        contrast: "13:1 (AAA)",
+        description: "Ergonomic switches for Day, Night, and Quiet Sleep Hours. Generous touch zones for tremor control.",
+        vector: "Toggle Click Feedback",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <span class="font-body-lg text-body-lg font-bold">Quick Controls</span>
+
+            <div class="w-full flex flex-col gap-3 px-4">
+              <div class="w-full h-[72px] rounded-2xl flex items-center justify-between px-6 ${isNight ? 'bg-nightCard text-white' : 'bg-dayCard text-dayText'} shadow-sm">
+                <span class="font-body-lg text-body-lg font-bold">Quiet Hours</span>
+                <span class="material-symbols-outlined text-4xl ${isNight ? 'text-nightGreen' : 'text-dayGreen'}">toggle_on</span>
+              </div>
+
+              <div class="w-full h-[72px] rounded-2xl flex items-center justify-between px-6 ${isNight ? 'bg-nightCard text-white' : 'bg-dayCard text-dayText'} shadow-sm">
+                <span class="font-body-lg text-body-lg font-bold">Speech Readout</span>
+                <span class="material-symbols-outlined text-4xl opacity-40">toggle_off</span>
+              </div>
+            </div>
+
+            <span class="font-caption text-caption opacity-70">Swipe up to exit</span>
+          </div>
+        `
+      },
+      {
+        id: 5,
+        title: "Alert 1: High Glucose",
+        category: "alert",
+        heroSize: "84px Tabular",
+        targetSize: "72px Primary CTA",
+        contrast: "12:1 (Amber Warm Ground)",
+        description: "Early warning stage. Non-alarmist amber tone signaling glucose drift above safe 180 threshold.",
+        vector: "Two Soft Rhythmic Pulses",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-1 pb-1">
+            <div class="flex items-center gap-2 px-4 py-1.5 rounded-full ${isNight ? 'bg-nightAmberBg text-nightAmber' : 'bg-dayAmberBg text-dayAmber'}">
+              <span class="material-symbols-outlined text-2xl">arrow_upward</span>
+              <span class="font-body-lg text-body-lg font-bold uppercase tracking-wide">Rising High</span>
+            </div>
+
+            <div class="flex flex-col items-center my-0">
+              <div class="flex items-center gap-3">
+                <span class="text-[84px] font-bold leading-none tnum font-glucose-display">195</span>
+                <span class="material-symbols-outlined text-5xl font-bold ${isNight ? 'text-nightAmber' : 'text-dayAmber'}">north_east</span>
+              </div>
+              <span class="font-caption text-caption opacity-80 uppercase font-semibold">mg / dL • Drink Water</span>
+            </div>
+
+            <button class="w-full h-[72px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 ${isNight ? 'bg-white text-black' : 'bg-[#1F2933] text-white'} shadow-lg active:scale-95 transition-transform">
+              <span class="material-symbols-outlined text-3xl">check</span>
+              <span>Got It</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 6,
+        title: "Alert 2: Urgent Low",
+        category: "alert",
+        heroSize: "84px Tabular",
+        targetSize: "72px Urgent CTA",
+        contrast: "13:1 (AAA)",
+        description: "Glucose dropping below 70. Crisp directional downward glyph and plain conversational instructions.",
+        vector: "Three Sharp Mechanical Taps",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-1 pb-1">
+            <div class="flex items-center gap-2 px-5 py-1.5 rounded-full ${isNight ? 'bg-nightRedBg text-nightRed' : 'bg-dayRedBg text-dayRed'}">
+              <span class="material-symbols-outlined text-2xl font-bold">arrow_downward</span>
+              <span class="font-body-lg text-body-lg font-bold uppercase tracking-wide">Low Glucose</span>
+            </div>
+
+            <div class="flex flex-col items-center my-0">
+              <div class="flex items-center gap-3">
+                <span class="text-[84px] font-bold leading-none tnum font-glucose-display">68</span>
+                <span class="material-symbols-outlined text-5xl font-bold ${isNight ? 'text-nightRed' : 'text-dayRed'}">south</span>
+              </div>
+              <span class="font-caption text-caption font-bold ${isNight ? 'text-nightRed' : 'text-dayRed'} uppercase tracking-wide">Have 15g Fast Sugar</span>
+            </div>
+
+            <button class="w-full h-[72px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 ${isNight ? 'bg-nightRed text-white' : 'bg-dayRed text-white'} shadow-lg active:scale-95 transition-transform">
+              <span class="material-symbols-outlined text-3xl">done</span>
+              <span>Got It</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 7,
+        title: "Alert 3: Critical Low",
+        category: "alert",
+        heroSize: "88px Solid Plate",
+        targetSize: "80px Full-Width Pad",
+        contrast: "15:1 Full Inversion",
+        description: "Critical safety screen. Solid high-relief red canopy with unambiguous, single-step rescue directive.",
+        vector: "Continuous Mechanical Vibration",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1 rounded-full p-2 bg-[#9F1D1D] text-white">
+            <div class="flex items-center gap-2 px-4 py-1 rounded-full bg-white/20">
+              <span class="material-symbols-outlined text-3xl font-bold">warning</span>
+              <span class="font-body-lg text-body-lg font-bold uppercase">Treat Now</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex items-center gap-2">
+                <span class="text-[88px] font-bold leading-none tnum font-glucose-display">52</span>
+                <span class="material-symbols-outlined text-5xl font-bold">south</span>
+              </div>
+              <span class="font-body-lg text-body-lg font-bold mt-1">Eat 15g sugar now</span>
+            </div>
+
+            <button class="w-full h-[74px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-3 bg-white text-[#9F1D1D] shadow-2xl active:scale-95 transition-transform">
+              <span class="material-symbols-outlined text-4xl">check_box</span>
+              <span>I Ate Sugar</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 8,
+        title: "Acknowledged Guard",
+        category: "alert",
+        heroSize: "80px Tabular Timer",
+        targetSize: "72px Reassurance Pill",
+        contrast: "14:1 (AAA)",
+        description: "Post-alert safety guard countdown. Verifies action taken and gives caregiver status reassurance.",
+        vector: "Caregiver Ping Dispatched",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-3xl ${isNight ? 'text-nightGreen' : 'text-dayGreen'}">verified</span>
+              <span class="font-body-lg text-body-lg font-bold">Timer Started</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <span class="font-caption text-caption opacity-70 uppercase tracking-widest font-semibold">Recheck In</span>
+              <span class="text-[80px] font-bold leading-none tracking-tight font-glucose-display tnum ${isNight ? 'text-nightGreen' : 'text-dayGreen'} my-1">15:00</span>
+              <span class="font-caption text-caption opacity-80">We will buzz you</span>
+            </div>
+
+            <div class="w-full px-4">
+              <div class="w-full py-3.5 rounded-full flex items-center justify-center gap-2 ${isNight ? 'bg-nightCard text-nightGreen' : 'bg-dayCard text-dayGreen'} shadow-sm">
+                <span class="material-symbols-outlined text-2xl">family_restroom</span>
+                <span class="font-caption text-caption font-bold">Caregiver Alerted</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 9,
+        title: "Exercise Mode: Normal",
+        category: "mode",
+        heroSize: "100px Tabular",
+        targetSize: "72px Pause Workout",
+        contrast: "13:1 (AAA)",
+        description: "Optimized for elevated arm movement and outdoor sunlight contrast while walking or gardening.",
+        vector: "High Contrast Optical Layer",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="flex items-center gap-2 px-4 py-1.5 rounded-full ${isNight ? 'bg-nightCard text-white' : 'bg-dayCard text-dayText'} shadow-sm">
+              <span class="material-symbols-outlined text-2xl text-primary">directions_walk</span>
+              <span class="font-body-lg text-body-lg font-bold">Walking Mode</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex items-center gap-3">
+                <span class="text-[100px] font-bold leading-none tnum font-glucose-display">138</span>
+                <span class="material-symbols-outlined text-5xl font-bold ${isNight ? 'text-nightGreen' : 'text-dayGreen'}">east</span>
+              </div>
+              <span class="font-caption text-caption tracking-wider uppercase font-semibold">Steady mg / dL</span>
+            </div>
+
+            <button class="w-full h-[72px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 ${isNight ? 'bg-white text-black' : 'bg-[#1F2933] text-white'} shadow-md">
+              <span class="material-symbols-outlined text-3xl">pause</span>
+              <span>Pause Workout</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 10,
+        title: "Exercise: Urgent Low",
+        category: "mode",
+        heroSize: "100px Tabular",
+        targetSize: "72px Stop Directive",
+        contrast: "14:1 (Solid Warning)",
+        description: "Safety halt protocol during physical exertion when glucose drops rapidly under muscular uptake.",
+        vector: "Mechanical Buzz + Prompt Voice",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="flex items-center gap-2 px-5 py-1.5 rounded-full bg-red-600 text-white font-bold animate-pulse">
+              <span class="material-symbols-outlined text-2xl">front_hand</span>
+              <span class="font-body-lg text-body-lg uppercase">Stop Exercise</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex items-center gap-3">
+                <span class="text-[100px] font-bold leading-none tnum font-glucose-display text-red-600">62</span>
+                <span class="material-symbols-outlined text-5xl font-bold text-red-600">south</span>
+              </div>
+              <span class="font-body-lg text-body-lg font-bold">Sit Down &amp; Rest</span>
+            </div>
+
+            <div class="w-full px-4">
+              <div class="w-full py-3.5 rounded-full flex items-center justify-center gap-2 bg-red-100 text-red-900">
+                <span class="material-symbols-outlined text-2xl font-bold">water_drop</span>
+                <span class="font-caption text-caption font-bold">Drink Juice Box Now</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 11,
+        title: "Sleep Mode (Dimmed)",
+        category: "mode",
+        heroSize: "48px Night Glyphs",
+        targetSize: "Hold Center to Wake",
+        contrast: "Calibrated Low-Glare Core",
+        description: "Zero blue light, deep blackout backdrop preventing circadian disruption in dark bedrooms.",
+        vector: "Silent Sentinel Monitoring",
+        render: () => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-4 pb-2 bg-black text-[#A0ADC0] rounded-full">
+            <div class="flex items-center gap-2 opacity-50">
+              <span class="material-symbols-outlined text-2xl">bedtime</span>
+              <span class="font-body-lg text-body-lg font-medium">3:24 AM</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div class="flex items-center gap-2 text-white/90">
+                <span class="text-[64px] font-bold leading-none tnum font-glucose-display">114</span>
+                <span class="material-symbols-outlined text-4xl text-[#7FD1A8]">east</span>
+              </div>
+              <span class="font-caption text-caption opacity-60 mt-1">Steady mg / dL</span>
+            </div>
+
+            <div class="font-caption text-caption opacity-40 uppercase tracking-widest pb-2">
+              Hold watch to wake
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 12,
+        title: "Sleep Night Alert",
+        category: "mode",
+        heroSize: "80px Inverted Alert",
+        targetSize: "180px Full Lower Palm Target",
+        contrast: "16:1 Awakening Inversion",
+        description: "Bedtime emergency awakening display. Bottom 50% forms a massive target easily tapped half-asleep.",
+        vector: "Escalating Mechanical Buzz",
+        render: () => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-0 bg-[#471414] text-white rounded-full overflow-hidden">
+            <div class="flex items-center gap-2 px-4 py-1 rounded-full bg-white/20 mt-1">
+              <span class="material-symbols-outlined text-3xl font-bold text-red-300">alarm</span>
+              <span class="font-body-lg text-body-lg font-bold uppercase">Wake Up • Low</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span class="text-[80px] font-bold leading-none tnum font-glucose-display">62</span>
+              <span class="material-symbols-outlined text-5xl font-bold text-red-300">south</span>
+            </div>
+
+            <!-- Massive Half-Screen Palm Target for Disoriented Waking -->
+            <button class="w-full h-32 bg-white text-black font-headline-lg text-headline-lg font-bold flex flex-col items-center justify-center gap-1 active:bg-gray-200">
+              <span class="material-symbols-outlined text-4xl text-red-600">pan_tool</span>
+              <span>I Am Awake</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 13,
+        title: "Signal Lost (Safety)",
+        category: "edge",
+        heroSize: "64px Dashed Indicator",
+        targetSize: "72px Log Manual CTA",
+        contrast: "12:1 (AAA)",
+        description: "Bluetooth or sensor transmitter drop. Explicit senior guidance to avoid dosing blindness.",
+        vector: "Single Warning Ping",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="flex items-center gap-2 px-4 py-1.5 rounded-full ${isNight ? 'bg-nightCard text-nightAmber' : 'bg-dayCard text-dayAmber'} shadow-sm">
+              <span class="material-symbols-outlined text-2xl">signal_cellular_connected_no_internet_0_bar</span>
+              <span class="font-body-lg text-body-lg font-bold uppercase">Signal Lost</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <span class="text-[64px] font-bold tracking-widest font-glucose-display opacity-40">---</span>
+              <span class="font-body-lg text-body-lg font-bold">Check with fingerstick</span>
+            </div>
+
+            <button class="w-full h-[72px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 ${isNight ? 'bg-white text-black' : 'bg-[#1F2933] text-white'} shadow-md">
+              <span class="material-symbols-outlined text-3xl">edit_note</span>
+              <span>Log Fingerstick</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 14,
+        title: "Sensor Warming Up",
+        category: "edge",
+        heroSize: "80px Tabular Minutes",
+        targetSize: "Passive Guidance Ring",
+        contrast: "13:1 (AAA)",
+        description: "Countdown timer following new sensor insertion with remaining calibration duration.",
+        vector: "Progress Indicator Arc",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <span class="font-body-lg text-body-lg font-bold">Warming Up</span>
+
+            <!-- Circular Progress Indicator Ring -->
+            <div class="relative w-44 h-44 flex items-center justify-center">
+              <svg class="w-full h-full -rotate-90" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" stroke="${isNight ? '#18212A' : '#E4EFFD'}" stroke-width="8" fill="none"/>
+                <circle cx="50" cy="50" r="42" stroke="${isNight ? '#7FD1A8' : '#006038'}" stroke-width="8" stroke-dasharray="264" stroke-dashoffset="88" stroke-linecap="round" fill="none"/>
+              </svg>
+              <div class="absolute flex flex-col items-center justify-center">
+                <span class="text-[60px] font-bold leading-none tnum font-glucose-display">30</span>
+                <span class="font-caption text-caption opacity-70">min left</span>
+              </div>
+            </div>
+
+            <div class="w-full px-6">
+              <div class="w-full py-3 rounded-full flex items-center justify-center gap-2 ${isNight ? 'bg-nightCard' : 'bg-dayCard'} shadow-sm font-caption text-caption font-semibold">
+                <span>Keep watch near arm</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 15,
+        title: "Replace Sensor",
+        category: "edge",
+        heroSize: "32px Bold Directive",
+        targetSize: "72px Pair Sensor CTA",
+        contrast: "14:1 (AAA)",
+        description: "Sensor expiration prompt. Clearly tells senior their 10 or 14-day continuous patch has ended.",
+        vector: "Audio Chime + Notification",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-3 pb-1">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center ${isNight ? 'bg-nightRedBg text-nightRed' : 'bg-dayRedBg text-dayRed'}">
+              <span class="material-symbols-outlined text-4xl">event_busy</span>
+            </div>
+
+            <div class="flex flex-col items-center px-4">
+              <h4 class="font-headline-lg text-headline-lg font-bold">Replace Sensor</h4>
+              <p class="font-body-lg text-body-lg opacity-80 mt-1">Sensor ended today</p>
+            </div>
+
+            <button class="w-full h-[72px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 ${isNight ? 'bg-white text-black' : 'bg-[#1F2933] text-white'} shadow-md">
+              <span class="material-symbols-outlined text-3xl">add_circle</span>
+              <span>Pair New Sensor</span>
+            </button>
+          </div>
+        `
+      },
+      {
+        id: 16,
+        title: "Low Watch Battery",
+        category: "edge",
+        heroSize: "80px Tabular 10%",
+        targetSize: "72px Charge Notice",
+        contrast: "13:1 (AAA)",
+        description: "Charge warning ensuring continuous nocturnal protection with clear percentage indicator.",
+        vector: "Low Power Pulse Indicator",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="flex items-center gap-2 px-4 py-1.5 rounded-full ${isNight ? 'bg-nightAmberBg text-nightAmber' : 'bg-dayAmberBg text-dayAmber'}">
+              <span class="material-symbols-outlined text-2xl font-bold">battery_alert</span>
+              <span class="font-body-lg text-body-lg font-bold uppercase">Battery Low</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <span class="text-[80px] font-bold leading-none tnum font-glucose-display text-amber-500">10%</span>
+              <span class="font-body-lg text-body-lg font-bold mt-1">Charge watch now</span>
+            </div>
+
+            <div class="w-full px-6">
+              <div class="w-full py-3.5 rounded-full flex items-center justify-center gap-2 ${isNight ? 'bg-nightCard' : 'bg-dayCard'} shadow-sm font-body-lg text-body-lg font-semibold">
+                <span class="material-symbols-outlined text-2xl text-amber-500">bolt</span>
+                <span>Place on charger</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        id: 17,
+        title: "Alerts Silenced (Off)",
+        category: "edge",
+        heroSize: "36px Warning Header",
+        targetSize: "72px Resume CTA",
+        contrast: "14:1 (AAA)",
+        description: "Critical state informing user that high/low sounds are muted. One-touch restoration button.",
+        vector: "Persistent Safety Banner",
+        render: (isNight) => `
+          <div class="w-full h-full flex flex-col items-center justify-between text-center pt-2 pb-1">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center ${isNight ? 'bg-nightAmberBg text-nightAmber' : 'bg-dayAmberBg text-dayAmber'}">
+              <span class="material-symbols-outlined text-4xl">notifications_off</span>
+            </div>
+
+            <div class="flex flex-col items-center px-4">
+              <h4 class="font-headline-lg text-headline-lg font-bold">Alerts Are Off</h4>
+              <p class="font-body-lg text-body-lg opacity-80 mt-1">Sounds are muted</p>
+            </div>
+
+            <button class="w-full h-[72px] rounded-full font-body-lg text-body-lg font-bold flex items-center justify-center gap-2 ${isNight ? 'bg-nightGreen text-black' : 'bg-dayGreen text-white'} shadow-md">
+              <span class="material-symbols-outlined text-3xl">notifications_active</span>
+              <span>Turn Alerts On</span>
+            </button>
+          </div>
+        `
+      }
+    ];
+
+    // State
+    let currentIndex = 0;
+    let isNightMode = false;
+    let showGuide = false;
+    let autoplayInterval = null;
+    let currentCategory = "all";
+
+    // DOM Elements
+    const screenContainer = document.getElementById("screen-container");
+    const watchCanvas = document.getElementById("watch-canvas");
+    const modeToggleBtn = document.getElementById("mode-toggle-btn");
+    const modeIcon = document.getElementById("mode-icon");
+    const modeLabel = document.getElementById("mode-label");
+    const guideToggleBtn = document.getElementById("guide-toggle-btn");
+    const safeGuideRing = document.getElementById("safe-guide-ring");
+    const autoplayBtn = document.getElementById("autoplay-btn");
+    const autoplayIcon = document.getElementById("autoplay-icon");
+    const autoplayLabel = document.getElementById("autoplay-label");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const screenTitleLabel = document.getElementById("screen-title-label");
+    const screenIndexLabel = document.getElementById("screen-index-label");
+    const thumbGrid = document.getElementById("thumb-grid");
+    const categoryTabs = document.getElementById("category-tabs");
+
+    // HUD Elements
+    const hudTitle = document.getElementById("hud-title");
+    const hudDescription = document.getElementById("hud-description");
+    const hudHeroSize = document.getElementById("hud-hero-size");
+    const hudTargetSize = document.getElementById("hud-target-size");
+    const hudContrast = document.getElementById("hud-contrast");
+    const hudChannelText = document.getElementById("hud-channel-text");
+
+    // Category labels lookup
+    const catNames = {
+      core: "Core Daily",
+      alert: "Alert Flow",
+      mode: "Modes & Sleep",
+      edge: "Safety & Hardware"
+    };
+
+    function renderScreen(index) {
+      const scr = screens[index];
+      
+      // Update Watch Face Palette (unless screen overrides with fixed emergency color)
+      if (scr.id === 7 || scr.id === 11 || scr.id === 12) {
+        // fixed emergency colors
+      } else {
+        if (isNightMode) {
+          watchCanvas.style.backgroundColor = '#0B0F14';
+          watchCanvas.style.color = '#F7F9FC';
+        } else {
+          watchCanvas.style.backgroundColor = '#F4F1EA';
+          watchCanvas.style.color = '#101813';
+        }
+      }
+
+      // Transition animation
+      screenContainer.style.opacity = '0';
+      screenContainer.style.transform = 'scale(0.96)';
+      
+      setTimeout(() => {
+        screenContainer.innerHTML = scr.render(isNightMode);
+        screenContainer.style.transition = 'all 200ms cubic-bezier(0, 0, 0.2, 1)';
+        screenContainer.style.opacity = '1';
+        screenContainer.style.transform = 'scale(1)';
+      }, 100);
+
+      // Update Screen Header Labels
+      screenTitleLabel.textContent = `${scr.id}. ${scr.title}`;
+      screenIndexLabel.textContent = `Screen ${scr.id} of ${screens.length} • ${catNames[scr.category] || 'All'}`;
+
+      // Update HUD
+      hudTitle.textContent = `${scr.id}. ${scr.title}`;
+      hudDescription.textContent = scr.description;
+      hudHeroSize.textContent = scr.heroSize;
+      hudTargetSize.textContent = scr.targetSize;
+      hudContrast.textContent = scr.contrast;
+      hudChannelText.textContent = scr.vector;
+
+      // Update Thumbnails Active State
+      const thumbs = thumbGrid.querySelectorAll('.thumb-card');
+      thumbs.forEach((t, i) => {
+        if (i === index) {
+          t.classList.add('ring-4', 'ring-primary', 'scale-105');
+          t.classList.remove('opacity-60');
+        } else {
+          t.classList.remove('ring-4', 'ring-primary', 'scale-105');
+          t.classList.add('opacity-60');
+        }
+      });
+    }
+
+    function buildThumbnails() {
+      thumbGrid.innerHTML = '';
+      screens.forEach((scr, idx) => {
+        const card = document.createElement('button');
+        card.className = `thumb-card flex flex-col items-center p-3 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all duration-200 text-left ${idx === currentIndex ? 'ring-4 ring-primary scale-105' : 'opacity-60'}`;
+        card.setAttribute('data-id', scr.id);
+        card.setAttribute('data-category', scr.category);
+
+        card.innerHTML = `
+          <div class="w-14 h-14 rounded-full flex items-center justify-center mb-2 shadow-inner font-bold text-sm ${isNightMode ? 'bg-nightCard text-white' : 'bg-surface-container-lowest text-dayText'}">
+            ${scr.id}
+          </div>
+          <span class="font-caption text-caption font-bold text-on-surface line-clamp-1 text-center w-full">${scr.title}</span>
+          <span class="text-xs text-secondary capitalize text-center">${catNames[scr.category]}</span>
+        `;
+
+        card.addEventListener('click', () => {
+          currentIndex = idx;
+          renderScreen(currentIndex);
+        });
+
+        thumbGrid.appendChild(card);
+      });
+    }
+
+    function filterThumbnails(cat) {
+      currentCategory = cat;
+      const thumbs = thumbGrid.querySelectorAll('.thumb-card');
+      thumbs.forEach((t) => {
+        const itemCat = t.getAttribute('data-category');
+        if (cat === 'all' || itemCat === cat) {
+          t.style.display = 'flex';
+        } else {
+          t.style.display = 'none';
+        }
+      });
+    }
+
+    // Event Handlers
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % screens.length;
+      renderScreen(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + screens.length) % screens.length;
+      renderScreen(currentIndex);
+    });
+
+    modeToggleBtn.addEventListener('click', () => {
+      isNightMode = !isNightMode;
+      if (isNightMode) {
+        modeIcon.textContent = 'dark_mode';
+        modeLabel.textContent = 'Night Charcoal';
+      } else {
+        modeIcon.textContent = 'light_mode';
+        modeLabel.textContent = 'Day Parchment';
+      }
+      buildThumbnails();
+      renderScreen(currentIndex);
+    });
+
+    guideToggleBtn.addEventListener('click', () => {
+      showGuide = !showGuide;
+      if (showGuide) {
+        safeGuideRing.classList.remove('hidden');
+        guideToggleBtn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+      } else {
+        safeGuideRing.classList.add('hidden');
+        guideToggleBtn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+      }
+    });
+
+    autoplayBtn.addEventListener('click', () => {
+      if (autoplayInterval) {
+        clearInterval(autoplayInterval);
+        autoplayInterval = null;
+        autoplayIcon.textContent = 'play_arrow';
+        autoplayLabel.textContent = 'Auto Cycle';
+        autoplayBtn.classList.remove('bg-error', 'text-on-error');
+        autoplayBtn.classList.add('bg-primary', 'text-on-primary');
+      } else {
+        autoplayInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % screens.length;
+          renderScreen(currentIndex);
+        }, 3200);
+        autoplayIcon.textContent = 'pause';
+        autoplayLabel.textContent = 'Pause Cycle';
+        autoplayBtn.classList.remove('bg-primary', 'text-on-primary');
+        autoplayBtn.classList.add('bg-error', 'text-on-error');
+      }
+    });
+
+    categoryTabs.addEventListener('click', (e) => {
+      const btn = e.target.closest('.cat-pill');
+      if (!btn) return;
+      categoryTabs.querySelectorAll('.cat-pill').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary');
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      filterThumbnails(btn.getAttribute('data-cat'));
+    });
+
+    // Keyboard Arrow Keys Navigation
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        currentIndex = (currentIndex + 1) % screens.length;
+        renderScreen(currentIndex);
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        currentIndex = (currentIndex - 1 + screens.length) % screens.length;
+        renderScreen(currentIndex);
+      }
+    });
+
+    // Initial Boot
+    buildThumbnails();
+    renderScreen(0);
+  })();
+</script></main>
+<!-- Technical Spec Footer -->
+<footer class="w-full max-w-[1900px] mt-16 pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-6 text-sm text-white/50">
+<div class="flex flex-wrap items-center gap-6">
+<span><strong>Display:</strong> 454 × 454px Circular OLED</span>
+<span><strong>Safe Core:</strong> 398px (28px peripheral boundary)</span>
+<span><strong>Font Family:</strong> Atkinson Hyperlegible Next</span>
+<span><strong>Word Boundary:</strong> Max 3 words / line</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-nightGreen"></span>
+<span class="text-white font-semibold">Strict Senior Readability Verified</span>
+</div>
+</footer>
+</body></html>

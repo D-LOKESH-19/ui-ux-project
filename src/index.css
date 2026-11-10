@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom smooth scroll and tactile styling */
+.tactile-card-day {
+  background-color: #ffffff;
+  border: 1.5px solid rgba(31, 41, 55, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.tactile-card-night {
+  background-color: #161e26;
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tactile-btn-day {
+  background-color: #1f2933;
+  color: #f4f1ea;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.tactile-btn-night {
+  background-color: #e8edf2;
+  color: #0b0f14;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.6), 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+

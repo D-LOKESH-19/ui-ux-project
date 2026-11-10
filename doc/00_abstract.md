@@ -1,0 +1,5 @@
+# Abstract
+
+People with diabetes who use continuous glucose monitors (CGM) depend on alerts to avoid dangerous lows and highs, yet published research shows that alarms are frequent and undifferentiated, often ignored, easy to sleep through, and hard to act on during exercise. This project designs a smartwatch interface that shows glucose trends and urgent warnings on a tiny screen, usable during exercise and while sleeping, and readable by older adults. Following a double-diamond process, we reviewed the literature and existing products, built literature-based personas and journey maps, and explored three concepts. We chose an adaptive-urgency design with four alert tiers and three context modes (daily, exercise, sleep), in soft day and night themes with very large numbers and plain words. Low-fidelity wireframes were developed into a high-fidelity Figma prototype. Usability testing with [FILL: n] participants showed [FILL: task success rate, average time, main issue fixed], and a WCAG 2.2 AA review led to [FILL: fixes]. The main outcome is [FILL: one-sentence result].
+
+*Word target: 150 to 200 words. Count after replacing the [FILL] items.*

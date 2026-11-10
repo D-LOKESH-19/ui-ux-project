@@ -1,0 +1,6 @@
+{
+  "name": "Serene Metric",
+  "description": "Medical-grade blood glucose monitoring smartwatch and companion dashboard with calm, dignified design for older adults.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
